@@ -1,0 +1,66 @@
+$header_bc: #e8583d;
+$logo-color: #fff;
+$text-color: #a7a7a7;
+
+@import "../mixin/_font.scss";
+
+.header {
+    &-logo {
+        padding-left: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: $header_bc;
+
+        .header-text-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            font-family: 'Amatic SC', cursive;
+            font-size: 54px;
+            font-weight: 600;            
+            color: $logo-color;
+
+            a {
+                text-decoration: none;
+                color: $logo-color;
+            }
+            span {
+                font-size: 35px;
+                font-weight: 500;
+                font-family: 'Caveat', cursive;
+            }
+        }
+    }
+
+    &-navbar {
+        // padding-left: 10%;
+        background-color: $logo-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        nav {
+            width: 700px;
+            height: 65px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            a {                
+                text-decoration: none;
+                @include font($text-color, 20px, normal);
+            }
+        }
+
+        .header-button {            
+            padding: 0 5px;
+            border-radius: 5%;
+            border: 1px solid #67c50c;
+            padding: 15px 29px;
+            background-color: #67c50c;
+            @include font(#fff, 20px, normal);
+        }
+    }
+}

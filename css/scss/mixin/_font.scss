@@ -1,0 +1,6 @@
+@mixin font($color, $size, $shade) {
+    font-family: 'Lato', sans-serif;
+    color: $color;
+    font-size: $size;
+    font-style: $shade;
+}
