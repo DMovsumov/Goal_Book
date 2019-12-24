@@ -144,4 +144,8 @@ body {
   border-radius: 50%;
   outline: none;
 }
+
+.header .active {
+  color: #e8ce3d;
+}
 /*# sourceMappingURL=style.css.map */
