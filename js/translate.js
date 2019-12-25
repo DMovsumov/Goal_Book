@@ -1,4 +1,4 @@
-const lang_english = ['All goals', 'Reach the goal', 'On the way to achieving', 'Create new goal']//Записываем в массив перевод всех слов в навигационном меню
+const lang_english = ['All goals', 'Reach the goal', 'On the way to achieving', 'Create new goal', 'Create new goal', 'Name', 'Description','Secondary Goals', 'Create goal']//Записываем в массив перевод всех слов в навигационном меню
 const lang = document.querySelectorAll('.lang')//Ко всем словам меню добавляем модификатор lang
 const headerRange = document.querySelector('#header-range')//Получаем range по id
 

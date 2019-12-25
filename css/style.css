@@ -148,4 +148,99 @@ body {
 .header .active {
   color: #e8ce3d;
 }
+
+.content {
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content-form {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 5%;
+  border-radius: 10px;
+}
+
+.content-form .content-form-create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 50%;
+  font-family: 'Lato', sans-serif;
+  color: #575859;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.content-form .content-form-create .content-title {
+  margin-bottom: 10px;
+}
+
+.content-form .content-form-create .input-text {
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.content-form .content-form-create .content-button-submit {
+  height: 40px;
+  width: 165px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  border-radius: 5%;
+  border: 1px solid #67c50c;
+  background-color: #67c50c;
+}
+
+.content-form .content-form-create .text {
+  font-size: 15px;
+}
+
+.content-form .content-form-create .content-desc {
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 15px;
+}
+
+.content-form .content-form-create .content-secondary_goals_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.content-form .content-form-create .content-secondary_goals_title span {
+  margin-right: 50px;
+}
+
+.content-form .content-form-create .content-secondary_goals_title button {
+  border-radius: 50%;
+  outline: none;
+  padding: 10px;
+  background-color: #eeeded;
+  text-decoration: none;
+  border: 1px solid #a7a7a7;
+  cursor: pointer;
+}
+
+.content-form .content-form-create .content-secondary_goals_title button i {
+  color: #646363;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
