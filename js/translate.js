@@ -12,10 +12,10 @@ for(let i = 0; i < lang.length; i++){
 
 headerRange.addEventListener('change', (e) => {
     for(let i = 0; i < lang.length; i++){
-        if(e.target.step == 0){
+        if(e.target.value == 0){
             lang[i].innerHTML = lang_english[i]
         }
-        if(e.target.step == 1) {
+        if(e.target.value == 1) {
             lang[i].innerHTML = lang_russian[i]
         }
     }
