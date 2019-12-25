@@ -34,14 +34,23 @@
     
     <section class="content">
         <div class="content-form">
-            <form class="create-form" action="" id="create-form">
-                <div class="text-title lang">Создать новую цель</div>
+            <form class="content-form-create" action="" id="content-form">
+                <div class="content-title lang">Создать новую цель</div>
+                <div class="content-title text lang">Название</div>
+                <input type="text" class="input-text" id="name" name="title">
+                <div class="content-title text lang">Описание</div>
+                <textarea name="desc" id="desc" cols="30" rows="10" class="content-desc"></textarea>
+
+                <div class="content-secondary_goals_title"><span class="lang">Промежуточные цели</span><button type="button" id="sec_goals"><i class="fas fa-plus"></i></button></div>
+
+                <button type="submit" class="content-button-submit lang">Создать цель</button>
             </form>
         </div>
     </section>
 
-
+    <script src="https://kit.fontawesome.com/b06e20d485.js" crossorigin="anonymous"></script>
     <script src="./js/translate.js"></script>
     <script src="./js/navigation.js"></script>
+    <script src="./js/create_goal.js"></script>
 </body>
 </html>
