@@ -8,28 +8,31 @@ let sub = {} // Создаем объект в который будем зап�
 
 
 form.addEventListener('submit', submitForm.bind(this))
-
-
-function submitForm(event) {
-    event.preventDefault()
-    let arr_sg = []
-    let sg = document.querySelectorAll('.sg')
-    for(let i = 0; i < sg.length; i++){
-        arr_sg[i] = sg[i].value
-    }
-
-    
-    sub = {
-        title: event.target.title.value,
-        desc: event.target.desc.value,
-        check: false,
-        secondary_goals: arr_sg
-    }
-    let i = goals.length
-    goals[i] = sub
-    console.log(JSON.stringify(goals))
-}
-
 sec_goals.addEventListener('click', (event) => {    
     content_sec_goals.insertAdjacentHTML('afterend', `<input type="text" class="input-text sg" name="sec_goal">`)  
 })
+
+function submitForm(event) {
+    event.preventDefault()
+
+    //Записываем промежуточные цели чтобы потом можо было их выводить и работать с ними
+    let obj_sec_goal = {}
+    let sg = document.querySelectorAll('.sg')
+    for(let i = 0; i < sg.length; i++){        
+        obj_sec_goal[i] = { value: sg[i].value,
+        check: false
+        }
+    }
+
+    sub.dataTime = new Date()
+    sub.title = event.target.title.value
+    sub.desc = event.target.desc.value
+    sub.check = false
+    sub.secondary_goals = obj_sec_goal
+    let i = goals.length
+    goals[i] = sub
+    console.log(JSON.stringify(goals))
+    localStorage.setItem('goal', JSON.stringify(goals))
+}
+
+
