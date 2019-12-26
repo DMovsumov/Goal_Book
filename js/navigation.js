@@ -1,24 +1,30 @@
 
 const navigation = document.getElementById('header-navigation')// Получаем доступ до header-navigation по id
 
-class Navbar {
-    constructor(){
+clickInit()
+function clickInit() {
+    navigation.addEventListener('click', (event) => {
+        event.preventDefault()
+        if(event.target.classList.contains('tab')){
+            Array.from(document.querySelectorAll('.tab')).forEach(tab => {
+                tab.classList.remove('active')            
+            })
+            event.target.classList.add('active')
+               
+        }
 
-    }
-
-    clickInit() {
-        navigation.addEventListener('click', tabClick.bind(this))
-    }
+        if(event.target.classList.contains('tab_1')){
+            console.log('h')
+        }else if(event.target.classList.contains('tab_2')) {
+            console.log(33)
+        }
+        else if(event.target.classList.contains('tab_3')) {
+            console.log(33 +'hh')
+        }
+    })
 }
 
-function tabClick(event) {
-    event.preventDefault()
-    if(event.target.classList.contains('tab')){
-        Array.from(document.querySelectorAll('.tab')).forEach(tab => {
-            tab.classList.remove('active')            
-        })
-        event.target.classList.add('active')   
-    }
+function showAllGoals(){
+    
 }
 
-new Navbar().clickInit()
