@@ -52,6 +52,7 @@ function showAllGoals() {
                     <input type="checkbox" class="checkGoal" name="" id=""></div>
                     <div class="content-date">${goal[key].dataTime}</div>
                     <hr>
+                    <div class="content-showDesc"><p>${goal[key].desc}</p></div>
                     <div class="content-secondaryGoals"><hr></div></div>`)
 
             for (let index in goal[key].secondary_goals) { // TODO: переписать
