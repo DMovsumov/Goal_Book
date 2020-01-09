@@ -7,3 +7,6 @@ TODO:
 2) Изменить множество функций(костылей).
 3) Использовать сборщик (webpack)
 4) Использовать конструкции class, import, export.
+
+
+[Ссылка на приложение](https://dmovsumov.github.io/Goal_Book/)
