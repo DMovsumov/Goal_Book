@@ -60,24 +60,9 @@ function showAllGoals() {
     }
 }
 
-// function showNoCheckGoals() {
-//     let noCheck = localStorage.getItem('goal')
-
-//     if(noCheck != undefined){
-//         let goal = JSON.parse(noCheck)
-//         for(let key in goal){
-//             if(goal[key].check == false){
-//                 allGoals.insertAdjacentHTML('afterbegin', )
-//             }
-//         }
-//     }
-// }
-
 function checkGoals(goal) {
     const inputCheck = document.querySelectorAll('.checks')
     const __goals = document.querySelectorAll('.__goals')
-    
-    // console.log(goal.check)
 
     for(let i of inputCheck){
         i.addEventListener('click', (e) => {
