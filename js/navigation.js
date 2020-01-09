@@ -27,15 +27,7 @@ function clickInit() {
         if (event.target.classList.contains('tab_1')) {
             formx.style.display = 'none'
             showAllGoals()
-        } else if (event.target.classList.contains('tab_2')) {
-            formx.style.display = 'none'
-            console.log(33)
-        }
-        else if (event.target.classList.contains('tab_3')) {
-            formx.style.display = 'none'
-            console.log(33 + 'hh')
-            // showNoCheckGoals()
-        }
+        } 
     })
 }
 
