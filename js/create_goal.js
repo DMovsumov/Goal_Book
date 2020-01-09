@@ -34,6 +34,7 @@ function submitForm(event) {
     goals[i] = sub
     console.log(JSON.stringify(goals))
     localStorage.setItem('goal', JSON.stringify(goals))
+    alert('Цель создана')
 }
 
 

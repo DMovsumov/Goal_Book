@@ -142,5 +142,10 @@ $text-color: #575859;
                 outline: none;
             }
         }
+
+        .check {
+            text-decoration: line-through;
+            color: #00f014;
+        }
     }
 }

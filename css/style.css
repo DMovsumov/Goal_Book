@@ -332,4 +332,9 @@ body {
   margin-right: 15px;
   outline: none;
 }
+
+.content-show .check {
+  text-decoration: line-through;
+  color: #00f014;
+}
 /*# sourceMappingURL=style.css.map */
